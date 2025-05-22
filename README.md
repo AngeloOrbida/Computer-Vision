@@ -58,7 +58,11 @@ Clip Duration: Each video was segmented into clips ranging from 1 to 5 seconds
 
 Preprocessing:
 
-      Resized to 112×112 resolution
+      Videos reduced to 1-second clips and cropped
+      
+      From each clip, 16 frames were extracted
+      
+      Frames resized to 112×112 pixels
       
       Normalized pixel values
       
