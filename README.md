@@ -29,3 +29,14 @@ This project presents a real time system for detecting and analyzing crowd behav
       c) Functionality; and
       
       d) Performance Efficiency.
+
+# Technologies Used
+      - Python
+      - TensorFlow / Pytorch
+      - OpenCV
+      - 3D CNN (Convolution Neural Network)
+      - Jetson Nano J1010
+      - Webcam
+      - CUDA
+      - Flask
+
