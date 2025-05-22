@@ -40,3 +40,52 @@ This project presents a real time system for detecting and analyzing crowd behav
       - CUDA
       - Flask
 
+# Dataset
+We used a combination of publicly available and custom video datasets to train and test our real-time crowd behavior monitoring system. The data was collected from Kaggle, YouTube, and original recordings.
+
+
+| Behavior Type | Number of Clips    |
+| ------------- | ------------------ |
+| Normal        | 1,400 (400 + 1000) |
+| Brawl         | 520                |
+| Panic         | 130                |
+| Fainting      | 100                |
+
+
+Source: Kaggle, YouTube, and custom-recorded videos
+
+Clip Duration: Each video was segmented into clips ranging from 1 to 5 seconds
+
+Preprocessing:
+
+      Resized to 112×112 resolution
+      
+      Normalized pixel values
+      
+      Converted to uniform frame rate
+      
+      Label encoding for classification
+      
+
+# Results
+The system achieved the following classification accuracy across behavior types:
+
+| Behavior Type | Accuracy |
+| ------------- | -------- |
+| Brawl         | 91.67%   |
+| Fainting      | 85.00%   |
+| Panic         | 85.00%   |
+| Normal        | 91.67%   |
+
+Overall Accuracy: 88.33%
+
+# Future Work
+
+1. Improve Model Accuracy and Adaptability
+Further enhancement of the 3D-CNN algorithm is recommended to increase the system’s precision in detecting complex behaviors. This includes expanding the dataset and training it with more diverse and context-rich scenarios.
+
+2. Multimodal Integration
+Future versions of the system could integrate sound detection to recognize auditory cues such as shouting, cries, or distress calls. This would improve responsiveness and provide more reliable early warnings.
+
+3. Wider Behavior Coverage
+The current system focuses on detecting brawl, panic, fainting, and normal behavior. Future iterations should include a broader spectrum of crowd behaviors (e.g., loitering, stampede, group formation, etc.) for comprehensive public safety monitoring.
