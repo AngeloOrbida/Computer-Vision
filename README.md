@@ -46,10 +46,10 @@ We used a combination of publicly available and custom video datasets to train a
 
 | Behavior Type | Number of Clips    |
 | ------------- | ------------------ |
-| Normal        | 1,400 (400 + 1000) |
+| Normal        | 1,239              |
 | Brawl         | 520                |
 | Panic         | 130                |
-| Fainting      | 100                |
+| Fainting      | 400                |
 
 
 Source: Kaggle, YouTube, and custom-recorded videos
